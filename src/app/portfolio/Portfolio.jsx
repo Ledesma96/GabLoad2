@@ -7,7 +7,7 @@ export const metadata = {
 
 
 
-const page = () => {
+const Portfolio = () => {
   
   /*card 1*/
   const [vermas, setVermas] = useState (false);
@@ -146,4 +146,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Portfolio
