@@ -1,4 +1,6 @@
-const works = [{name: "ItanFlor", category:"servicios", image:"/Reg Hindley.jpg", url:"www.itanflor.com"}]
+const works = [{id:3,name: "Cantinero", category:"e-comerce", image:"/cantineromook.jpg", url:"https://cantinero.netlify.app/"},
+{id:2,name:"Cook4Soul", url:"www.cook4souls.com", category:"e-commerce", image:"/c4sMock.jpg", fecha:"19 de julio del 2023"},
+{id:1,name: "ItanFlor", category:"servicios", image:"/Reg Hindley.jpg", url:"www.itanflor.com"}]
 
 export const metadata = {
   title: 'GabLoad-Proyects',
@@ -13,7 +15,7 @@ export const categoria = ({params}) => {
     <div className="category">
     {filterCategory.map((item) => {
       return(
-        <div className="category__item">
+        <div key={item.id} className="category__item">
           <h1 className="category__item__name">{item.name}</h1>
           <a href={ "https://" + item.url} target="blanck">
             <img className="category__item__img" src={item.image} alt="mokup de pagina web llamda itanflor en vista mobile, tablet y escritorio" />
